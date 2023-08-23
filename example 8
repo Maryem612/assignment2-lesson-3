@@ -1,0 +1,48 @@
+/*
+ ============================================================================
+ Name        : example8.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x;
+    int y;
+    char c;
+    printf(" enter the values of two numbers : ");
+    fflush(stdin);fflush(stdout);
+    scanf(" %d %d ",&x,&y);
+    printf("  choose from (+) (-) (/) (*) ");
+    fflush(stdin);fflush(stdout);
+    scanf(" %c",&c);
+
+    switch(c)
+    {
+    case '+':
+    /* to get addition */
+    printf ( "%d + %d = %d " , x,y,x+y);
+    break;
+case '*':
+    /* to get multiplication */
+    printf(" %d * %d = %d ",x,y,x*y);
+    break;
+case '-':
+    /* to get subtraction */
+    printf ( "%d - %d = %d " , x,y,x-y);
+    break;
+case '/':
+ /* to get division */
+    printf(" %d / %d = %d ",x,y,x/y);
+    break;
+default:
+      printf("Error! operator is not correct");
+  }
+        return 0;
+}
