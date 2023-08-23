@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name        : ex5.c
+ Author      : Maryem Abdelmegid
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    char c;
+    printf(" enter the letter :");
+    scanf(" %c ", &c);
+    if ( isalpha (c))
+    printf("%c is an alphabet.", c);
+else
+    printf("%c is capital letter.", c);
+return 0;
+}
